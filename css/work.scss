@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+// font-family: 'Nunito Sans', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+// font-family: 'Cormorant Garamond', serif;
+
+@media (min-width:1025px){
+    @import '_mixin'; 
+    @import 'common';
+    @import '_mixin_work';
+    @include pc_work;
+}// min 1024
+
+@media (min-width:768px) and (max-width:1024px){
+    @import 'common';
+    @import '_mixin_work';
+    @import '_mixin_work1024';
+    @include tabelet_work;
+}
+
+@media (min-width:768px) and (max-width:900px){
+    @import 'common';
+    @import '_mixin_work';
+    @import '_mixin_work1024';
+    @include tabelet_ipad_work;
+}
+
+@media (max-width:767px){
+    @import 'common';
+    @import '_mixin_work';
+    @import '_mixin_work767';
+    @include mobill_work;
+}

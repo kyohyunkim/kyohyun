@@ -1,0 +1,711 @@
+@mixin menu_li1{
+    a{
+        cursor: pointer;
+        vertical-align: middle;
+        svg{
+            vertical-align: middle;
+            circle:nth-of-type(1){
+                fill:#fdfbf4;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+            }
+            circle:nth-of-type(2){
+                fill:#1b2c13;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+                transition: 1s;
+                opacity: 0;
+                &.active{opacity: 1;}
+            }
+        }
+    }
+    span{
+        font-size: .7em;
+        word-spacing: 5px;
+    }
+}
+@mixin menu_li2{
+    a{
+        cursor: pointer;
+        vertical-align: middle;
+        svg{
+            vertical-align: middle;
+            circle:nth-of-type(1){
+                fill:#fdfbf4;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+            }
+            circle:nth-of-type(2){
+                opacity: 0;
+                fill:#1b2c13;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+                transition: 1s;
+                opacity: 0;
+                &.active{opacity: 1;}
+            }
+        }
+    }
+    span{
+        font-size: .7em;
+        word-spacing: 5px;
+    }
+}
+@mixin menu_li3{
+    a{
+        cursor: pointer;
+        vertical-align: middle;
+        svg{
+            vertical-align: middle;
+            circle:nth-of-type(1){
+                fill:#fdfbf4;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+            }
+            circle:nth-of-type(2){
+                opacity: 0;
+                fill:#1b2c13;
+                stroke: #1b2c13;
+                stroke-width: 1.2px;
+                transition: 1s;
+                opacity: 0;
+                &.active{opacity: 1;}
+            }
+        }
+    }
+    span{
+        font-size: .7em;
+    }
+}
+
+
+@mixin workSpace_gugus{
+    width:100%;
+    height: 650px;
+    padding:15px;
+    .g_title{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        p{
+            padding:0;
+            text-transform: uppercase; 
+            width:100%; font-size: 1rem;
+            span{cursor: pointer; padding:0 8px; border:1px solid#1a2b13; font-size: 1rem;}
+            span:hover{background-color: #1a2b13; color:#fffbee;}
+            a{display: block; margin-top: 30px;}
+        }
+        p:nth-of-type(2){
+            cursor: pointer;
+            width:20%;
+            text-align: right;
+            img{width:100%; height: 100px; transform: translateX(-20px) rotate(90deg); font-size: 1rem;}
+        }
+    }
+    .thum{
+        width:100%;
+        height: 450px;
+        position: relative;
+        background-color: #ddd;
+        // font-size: 6.5em;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        .shop{
+            z-index: 2;
+            position: absolute;
+            top:0; left:0;
+            display: flex;
+            justify-content: space-between;
+            align-items:flex-start;
+            width:100%;
+            border:1px solid#1a2b13;
+            p{
+                cursor: pointer;
+                margin:0; padding:0;
+                width:100%;
+                border-right:1px solid#1a2b13;
+                background-color: #fffbee;
+                &:nth-last-child(1){border-right: none;}
+                img{width:100px; height: 100px; width:50%;}
+            }
+            p:hover{
+                background-color: #222;
+                color:#fffbee;
+            }
+            p:nth-of-type(1){&.active{background-color: #222;color:#fff;}}
+            p:nth-of-type(2){&.active{background-color: #222;color:#fff;}}
+            p:nth-of-type(3){&.active{background-color: #222;color:#fff;}}
+            p:nth-of-type(4){&.active{background-color: #222;color:#fff;}}
+            p:nth-of-type(5){&.active{background-color: #222;color:#fff;}}
+            p:nth-of-type(6){&.active{background-color: #222;color:#fff;}}
+        }
+        .bag{
+            position:absolute;
+            bottom:0; left:0;
+            width:100%;
+            height: 100%;
+            border:1px solid#1a2b13;
+            overflow: hidden;
+            p{
+                position: absolute;
+                top:50%; left:50%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                transform-origin: center center;
+                img{width:1100px; height: 1100px; }
+                &:nth-of-type(1){opacity: 0; &.active{opacity: 1; font-size: 6vw;top:23%;}}
+            }
+            // p:nth-of-type(1){opacity: 0; font-size: 5rem;&.active{opacity: 1;}}
+            p:nth-of-type(2){opacity: 0; &.active{opacity: 1;}}
+            p:nth-of-type(3){opacity: 0; &.active{opacity: 1;}}
+            p:nth-of-type(4){opacity: 0; &.active{opacity: 1;}}
+            p:nth-of-type(5){opacity: 0; &.active{opacity: 1;}}
+            p:nth-of-type(6){opacity: 0; &.active{opacity: 1;}}
+        }
+        img{
+            width:100%;
+            margin-top:30px;
+        }
+        .line{
+            position:absolute;
+            top:0;left:0;
+            width:100%;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            border:1px solid#1b2c13;
+        }
+        .line:hover{
+            border:1px solid#1b2c13;
+            opacity: 1;
+        }
+    }
+}
+@mixin workSpace_kolon{
+    width:100%;
+    height: 650px;
+    padding:15px;
+    .g_title{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        p{
+            padding:0;
+            text-transform: uppercase; 
+            width:100%; font-size: 1rem;
+            span{cursor: pointer; padding:0 8px; border:1px solid#1a2b13; font-size: 1rem;}
+            span:hover{background-color: #1a2b13; color:#fffbee;}
+            a{display: block; margin-top: 30px;}
+        }
+        p:nth-of-type(2){
+            cursor: pointer;
+            width:20%;
+            text-align: right;
+            img{width:100%; height: 100px; transform: translateX(-20px) rotate(90deg); font-size: 1rem;}
+        }
+    }
+    .thum{
+        width:100%;
+        height: 450px;
+        position: relative;
+        background-color: #ddd;
+        border:1px solid#1a2b13;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        // overflow-y:scroll;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
+        .move{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width:100%; height: 100%;
+            font-size: 6vw;
+            .left_text{
+                // border-right:1px solid#1a2b13;
+                width:55%; height: 100%;
+                position: relative;
+                z-index: 10;
+                background-color: #ddd;
+                p{text-align: right;  margin:0; padding:0;}
+                p:nth-of-type(1){transform: translateY(0%);position: absolute;top:0; right:0;}
+                p:nth-of-type(2){transform: translateY(-50%);position: absolute;top:50%; right:0;}
+                p:nth-of-type(3){transform: translateY(0%);position: absolute;bottom:0; right:0;}
+            }
+            .right_text{
+                width:45%; height: 100%;
+                z-index:9;
+                position: relative;
+                p{text-align: left;  margin:0; padding:0;}
+                p:nth-of-type(1){
+                    transform: translate(-110%,0%); animation: rightani1 4s infinite; animation-delay: .1s;
+                    position: absolute;top:0; left:0;
+                }
+                p:nth-of-type(2){
+                    transform: translate(0%,-50%);animation: rightani2 4s infinite; animation-delay: .3s;
+                    position: absolute;top:50%; left:0;
+                }
+                p:nth-of-type(3){
+                    transform: translate(-110%,0%);animation: rightani3 4s infinite; animation-delay: .5s;
+                    position: absolute;bottom:0; left:0;
+                }
+            }
+            @keyframes rightani1{
+                0%{transform: translate(-110%,0%);}
+                25%{transform: translate(5%,0%);}
+                50%{transform: translate(5%,0%);}
+                75%{transform: translate(5%,0%);}
+                100%{transform: translate(-110%,0%);}
+            }
+            @keyframes rightani2{
+                0%{transform: translate(-110%,-50%);}
+                25%{transform: translate(5%,-50%);}
+                50%{transform: translate(5%,-50%);}
+                75%{transform: translate(5%,-50%);}
+                100%{transform: translate(-110%,-50%);}
+            }
+            @keyframes rightani3{
+                0%{transform: translate(-110%,0%);}
+                25%{transform: translate(5%,0%);}
+                50%{transform: translate(5%,0%);}
+                75%{transform: translate(5%,0%);}
+                100%{transform: translate(-110%,0%);}
+            }
+        }
+        img{
+            width:100%;
+            margin-top:30px;
+        }
+    }
+}
+@mixin workSpace_eyes{
+    width:100%;
+    height: 650px;
+    padding:15px;
+    .g_title{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        p{
+            padding:0;
+            text-transform: uppercase; 
+            width:100%; font-size: 1rem;
+            span{cursor: pointer; padding:0 8px; border:1px solid#1a2b13; font-size: 1rem;}
+            span:hover{background-color: #1a2b13; color:#fffbee;}
+            a{display: block; margin-top: 30px;}
+        }
+        p:nth-of-type(2){
+            cursor: pointer;
+            width:20%;
+            text-align: right;
+            img{width:100%; height: 100px; transform: translateX(-20px) rotate(90deg); font-size: 1rem;}
+        }
+    }
+    .thum{
+        width:100%;
+        height: 450px;
+        position: relative;
+        background-color: #ddd;
+        font-size: 6vw;
+        font-weight: 700;
+        text-align: center;
+        border:1px solid#1a2b13;
+        .etext{
+        
+            display:flex;
+            justify-content: center;
+           
+            p:nth-child(1){
+                position: absolute; top:0%; left:10%;
+                margin:0; padding:0;
+            }
+            p:nth-child(2){
+                position: absolute; top:0%; right:10%;
+                margin:0; padding:0;
+            }
+        }
+        .eye{
+            img:nth-child(1){
+                position: absolute; top:35%; left:0;
+                // transform: translate(0%, -50%);
+            }
+            img:nth-child(2){
+                position: absolute; top:35%; left:0;
+                // transform: translate(0%, -50%);
+            }
+        }
+        .ytext{
+            position: absolute; bottom:0%; left:50%;
+            transform: translate(-50%, 0%);
+            p{margin:0; padding:0;}
+        }
+        img{
+            width:100%;
+            margin-top:30px;
+        }
+    }
+}
+
+
+@mixin workSpace_drop{
+    width:100%;
+    height: 650px;
+    padding:15px;
+    .g_title{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        p{
+            padding:0;
+            text-transform: uppercase; 
+            width:100%; font-size: 1rem;
+            span{cursor: pointer; padding:0 8px; border:1px solid#1a2b13; font-size: 1rem;}
+            span:hover{background-color: #1a2b13; color:#fffbee;}
+            a{display: block; margin-top: 30px;}
+        }
+        p:nth-of-type(2){
+            cursor: pointer;
+            width:20%;
+            text-align: right;
+            img{width:100%; height: 100px; transform: translateX(-20px) rotate(90deg); font-size: 1rem;}
+        }
+    }
+    .thum{
+        width:100%;
+        height: 450px;
+        position: relative;
+        background-color: #ddd;
+        font-size: 6vw;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid#1a2b13;
+        overflow: hidden;
+        .drop{
+            p{margin:0; padding:0;}
+            p:nth-of-type(1){
+                position:absolute; top:-50%; left:0;
+                animation: drop1 5s infinite; animation-delay:.2s;
+                &:hover{
+                    animation-play-state:paused;
+                }
+            }
+            p:nth-of-type(2){
+                position:absolute; top:-50%; left:30%;
+                animation: drop2 5s infinite; animation-delay:.4s;
+                &:hover{
+                    animation-play-state:paused;
+                }
+            }
+            p:nth-of-type(3){
+                position:absolute; top:-50%; right:30%;
+                animation: drop3 5s infinite; animation-delay:.6s;
+                &:hover{
+                    animation-play-state:paused;
+                }
+            }
+            p:nth-of-type(4){
+                position:absolute; top:-50%; right:0;
+                animation: drop4 5s infinite; animation-delay:.8s;
+                &:hover{
+                    animation-play-state:paused;
+                }
+            }
+            @keyframes drop1 {
+                0%{}
+                40%{top:50%; transform: rotate(30deg);}
+                // 40%{top:50%; transform: rotate(30deg);}
+                // 60%{top:50%; transform: rotate(0deg);}
+                80%{top:50%; transform: rotate(0deg);}
+                100%{top:50%; transform:translate(-100%, -100%) rotate(-30deg);}
+            }
+            @keyframes drop2 {
+                0%{}
+                40%{top:50%; transform: rotate(-30deg);}
+                // 40%{top:50%; transform: rotate(-30deg);}
+                // 60%{top:50%; transform: rotate(0deg);}
+                80%{top:50%; transform: rotate(0deg);}
+                100%{top:-50%; transform:translate(-100%, -100%) rotate(-30deg);}
+            }
+            @keyframes drop3 {
+                0%{}
+                40%{top:50%; transform: rotate(-50deg);}
+                // 40%{top:50%; transform: rotate(-50deg);}
+                // 60%{top:50%; transform: rotate(0deg);}
+                80%{top:50%; transform: rotate(0deg);}
+                100%{top:50%; transform:translate(350%, -100%) rotate(-30deg);}
+            }
+            @keyframes drop4 {
+                0%{}
+                40%{top:50%; transform: rotate(10deg);}
+                // 40%{top:50%; transform: rotate(10deg);}
+                // 60%{top:50%; transform: rotate(0deg);}
+                80%{top:50%; transform: rotate(0deg);}
+                100%{top:70%; transform:translate(100%, 100%) rotate(-30deg);}
+            }
+        }
+        img{
+            width:100%;
+            margin-top:30px;
+        }
+    }
+}
+
+@mixin workWhite{
+    width:100%;
+    height: 650px;
+    padding:15px;
+
+    .thum{
+        width:100%;
+        height: 450px;
+    }
+}
+
+@mixin slidersection_ban8_reversal{
+    /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+    .small_section1{
+       
+        display: none;
+        &.active{display: block;}
+    .section .slidewrap {max-width:25%; margin:0;}
+    .section .slidelist {white-space:nowrap;font-size:0;position: relative; z-index: 1;}
+    .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; cursor: pointer; }
+    .section .slidelist > li a:hover{border:1px solid#1b2c13;}
+    .section .slidelist > li > a {display:block;position:relative;}
+
+    /* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+    .section .slide-control {left:0;z-index:10;width:100%;height:100%;}
+    .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+    .section .slide-control .left {left:20px;background:url('../img/left.png') left center / 20% no-repeat; position: absolute;}
+    .section .slide-control .right {right:20px;background:url('../img/right.png') right center / 20% no-repeat; position: absolute;}
+    .section .slide-control [class*="control"] {display:none;}
+
+    /* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+    .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+    .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+    .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+    .section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+    .section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+    .section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
+    .section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}
+    .section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}
+    .section [id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}
+    
+    /*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+    .section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+    .section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+    .section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+    .section [id="slide04"]:checked ~ .slidewrap .control04 {display:block;}
+    .section [id="slide05"]:checked ~ .slidewrap .control05 {display:block;}
+    .section [id="slide06"]:checked ~ .slidewrap .control06 {display:block;}
+    .section [id="slide07"]:checked ~ .slidewrap .control07 {display:block;}
+    .section [id="slide08"]:checked ~ .slidewrap .control08 {display:block;}
+    .section [id="slide09"]:checked ~ .slidewrap .control09 {display:block;}
+    }
+}
+
+@mixin slidersection_ban8_choco{
+    /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+        .small_section2{
+           
+            display: none;
+            &.active{display: block;}
+        .section .slidewrap {max-width:25%; margin:0;}
+        .section .slidelist2 {white-space:nowrap;font-size:0;}
+        .section .slidelist2> li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; cursor: pointer;}
+        .section .slidelist2> li a:hover{border:1px solid#1b2c13;}
+        .section .slidelist2 > li > a {display:block;position:relative;}
+
+        /* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+        .section .slide-control {left:0;z-index:10;width:100%;height:100%;}
+        .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+        .section .slide-control .left {left:20px;background:url('../img/left.png') left center / 20% no-repeat; position: absolute;} 
+        .section .slide-control .right {right:20px;background:url('../img/right.png') right center / 20% no-repeat; position: absolute;}
+        .section .slide-control [class*="control"] {display:none;}
+    /* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+    .section [id="slide2-01"]:checked ~ .slidewrap .slidelist2 > li {transform:translateX(0%);}
+    .section [id="slide2-02"]:checked ~ .slidewrap .slidelist2 > li {transform:translateX(-100%);}
+    .section [id="slide2-03"]:checked ~ .slidewrap .slidelist2 > li {transform:translateX(-200%);}
+    
+    /*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+    .section [id="slide2-01"]:checked ~ .slidewrap .control01 {display:block;}
+    .section [id="slide2-02"]:checked ~ .slidewrap .control02 {display:block;}
+    .section [id="slide2-03"]:checked ~ .slidewrap .control03 {display:block;}
+    }
+
+}
+
+@mixin slidersection_ban8_sticker{
+    /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+        .small_section3{
+            display: none;
+            &.active{display: block;}
+        .section .slidewrap {max-width:25%; margin:0;}
+        .section .slidelist3 {white-space:nowrap;font-size:0;}
+        .section .slidelist3> li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; cursor: pointer;}
+        .section .slidelist3> li a:hover{border:1px solid#1b2c13;}
+        .section .slidelist3 > li > a {display:block;position:relative;}
+
+        /* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+        .section .slide-control {left:0;z-index:10;width:100%;height:100%;}
+        .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+        .section .slide-control .left {left:20px;background:url('../img/left.png') left center / 20% no-repeat; position: absolute;} 
+        .section .slide-control .right {right:20px;background:url('../img/right.png') right center / 20% no-repeat; position: absolute;}
+        .section .slide-control [class*="control"] {display:none;}
+    /* I NPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+    .section [id="slide3-01"]:checked ~ .slidewrap .slidelist3 > li {transform:translateX(0%);}
+    .section [id="slide3-02"]:checked ~ .slidewrap .slidelist3 > li {transform:translateX(-100%);}
+    // .section [id="slide-03"]:checked ~ .slidewrap .slidelist3 > li {transform:translateX(-200%);}
+    
+    /*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+    .section [id="slide3-01"]:checked ~ .slidewrap .control01 {display:block;}
+    .section [id="slide3-02"]:checked ~ .slidewrap .control02 {display:block;}
+    // .section [id="slide-03"]:checked ~ .slidewrap .control03 {display:block;}
+    }
+
+}
+
+
+@mixin slidersection_headal{
+    /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+        .small_section4{
+            display: none;
+            &.active{display: block;}
+        .section .slidewrap {max-width:25%; margin:0;}
+        .section .slidelist4 {white-space:nowrap;font-size:0;}
+        .section .slidelist4> li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; cursor: pointer;}
+        .section .slidelist4> li a:hover{border:1px solid#1b2c13;}
+        .section .slidelist4 > li > a {display:block;position:relative;}
+
+        /* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+        .section .slide-control {left:0;z-index:10;width:100%;height:100%;}
+        .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+        .section .slide-control .left {left:20px;background:url('../img/left.png') left center / 20% no-repeat; position: absolute;} 
+        .section .slide-control .right {right:20px;background:url('../img/right.png') right center / 20% no-repeat; position: absolute;}
+        .section .slide-control [class*="control"] {display:none;}
+    /* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+    .section [id="slide4-01"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(0%);}
+    .section [id="slide4-02"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(-100%);}
+    .section [id="slide4-03"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(-200%);}
+    .section [id="slide4-04"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(-300%);}
+    
+    /*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+    .section [id="slide4-01"]:checked ~ .slidewrap .control01 {display:block;}
+    .section [id="slide4-02"]:checked ~ .slidewrap .control02 {display:block;}
+    .section [id="slide4-03"]:checked ~ .slidewrap .control03 {display:block;}
+    .section [id="slide4-04"]:checked ~ .slidewrap .control04 {display:block;}
+    }
+
+}
+
+
+@mixin slidersection_illust{
+    /* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+        .small_section5{
+            display: none;
+            &.active{display: block;}
+        .section .slidewrap {max-width:25%; margin:0;}
+        .section .slidelist5 {white-space:nowrap;font-size:0;}
+        .section .slidelist5> li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; cursor: pointer;}
+        .section .slidelist5> li a:hover{border:1px solid#1b2c13;}
+        .section .slidelist5 > li > a {display:block;position:relative;}
+
+        /* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+        .section .slide-control {left:0;z-index:10;width:100%;height:100%;}
+        .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+        .section .slide-control .left {left:20px;background:url('../img/left.png') left center / 20% no-repeat; position: absolute;} 
+        .section .slide-control .right {right:20px;background:url('../img/right.png') right center / 20% no-repeat; position: absolute;}
+        .section .slide-control [class*="control"] {display:none;}
+    /* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+    .section [id="slide5-01"]:checked ~ .slidewrap .slidelist5 > li {transform:translateX(0%);}
+    .section [id="slide5-02"]:checked ~ .slidewrap .slidelist5 > li {transform:translateX(-100%);}
+    // .section [id="slide5-03"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(-200%);}
+    // .section [id="slide5-04"]:checked ~ .slidewrap .slidelist4 > li {transform:translateX(-300%);}
+    
+    /*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+    .section [id="slide5-01"]:checked ~ .slidewrap .control01 {display:block;}
+    .section [id="slide5-02"]:checked ~ .slidewrap .control02 {display:block;}
+    // .section [id="slide5-03"]:checked ~ .slidewrap .control03 {display:block;}
+    // .section [id="slide5-04"]:checked ~ .slidewrap .control04 {display:block;}
+    }
+
+}
+
+
+
+@mixin intro_li_1{
+    li:nth-child(1){
+        margin-top: 50px;
+        font-size: 2em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: left;
+        padding:0 0 0 175px;
+    }
+    li:nth-child(1) a{
+        position:relative;
+        margin-bottom:5px;
+    }
+    li:nth-child(1) a:before{
+        content : '';
+        z-index: 99;
+        position: absolute;  
+        background-color: #1b2c13;
+        height: 1px;
+        width : 100%;
+        bottom: -20px;         
+        transition: 0.5s;  
+    }
+}
+@mixin  svg{
+    fill:#fdfbf4;
+    stroke: #1b2c13;
+    stroke-width: 1.2px;
+}
+
+@mixin sticker_ani{
+    span{
+        position:absolute; top:0; left:17%;
+        transform: translateX(-50%);
+        img{width:90%;}
+    }
+    span:nth-of-type(2){
+        animation: hand 1s infinite;
+    }
+    span:nth-of-type(4){
+        animation: light .5s infinite;
+        animation-delay: .1s;
+    }
+    span:nth-of-type(5){
+        animation: light .5s infinite;
+        animation-delay: .2s;
+    }
+    span:nth-of-type(6){
+        animation: light .5s infinite;
+        animation-delay: .3s;
+    }
+    span:nth-of-type(7){
+        animation: light .5s infinite;
+        animation-delay: .4s;
+    }
+    span:nth-of-type(8){
+        animation: light .5s infinite;
+        animation-delay: .5s;
+    }
+    span:nth-of-type(9){
+        left:40%;
+        transform: translateY(0);
+    }
+    @keyframes light {
+        0%{opacity: 0;}
+        100%{opacity:1;}
+    }
+    @keyframes hand {
+        0%{top:-8px}
+        100%{top:0px;}
+    }
+}

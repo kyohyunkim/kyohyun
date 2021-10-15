@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+// font-family: 'Nunito Sans', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+// font-family: 'Cormorant Garamond', serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+// font-family: 'Noto Sans KR', sans-serif;
+@import 'common';
+
+@media (min-width:1025px){
+        @import '_mixin_detail';
+        @include detail_pc;
+}// min 1025
+    
+@media (min-width:768px) and (max-width:1024px){
+    @import '_mixin_detail';
+    @include detail_tabelet;
+}
+
+@media (max-width:767px){
+    @import '_mixin_detail';
+    @include detail_mobill;
+}

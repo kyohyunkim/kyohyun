@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+// font-family: 'Nunito Sans', sans-serif; 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+// font-family: 'Cormorant Garamond', serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+// font-family: 'Noto Sans KR', sans-serif;
+h4{font-family: 'Nunito Sans', sans-serif; }
+@media (min-width:1025px){
+@import '_mixin'; 
+@import'_mixin_main'; //모든 메인 css
+@import 'common';
+@include mainIndex;
+}// min 1024
+
+@media (min-width:768px) and (max-width:1024px){
+    @import '_mixin_main1024'; //1024전용 믹스인
+    @import'_mixin_main'; //모든 메인 css
+    @import 'common';
+    @include mainIndexTablet; 
+}
+
+@media (max-width:767px){
+    @import '_mixin_main767'; //1024전용 믹스인
+    @import'_mixin_main'; //모든 메인 css
+    @import 'common';
+    @include mainIndexMobill; 
+}

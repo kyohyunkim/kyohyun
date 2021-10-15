@@ -1,0 +1,64 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #aacccc;
+}
+
+.grades {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grades h1 {
+  font-size: 3em;
+}
+
+.grades table {
+  width: 900px;
+  border-collapse: collapse;
+  background: #aacccc;
+}
+
+.grades table th {
+  padding: 15px 20px;
+  border: 1px solid #fff;
+}
+
+.grades table td {
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.grades table td input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #aacccc;
+}
+
+.grades .btn {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+
+textarea {
+  width: 600px;
+  height: 300px;
+}
+/*# sourceMappingURL=write.css.map */
