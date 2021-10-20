@@ -1772,7 +1772,7 @@
   }
   main .sec-1 .intro .reversal {
     overflow-y: hidden;
-    height: 1000px;
+    height: 800px;
     text-align: center;
   }
   main .sec-1 .intro .reversal ul li:nth-child(1) {
@@ -1879,7 +1879,7 @@
     }
   }
   main .sec-1 .intro .choco {
-    height: 1000px;
+    height: 800px;
     overflow-y: hidden;
     text-align: center;
   }
@@ -1987,7 +1987,7 @@
     display: block;
   }
   main .sec-1 .intro .sticker {
-    height: 1000px;
+    height: 800px;
     overflow-y: hidden;
     text-align: center;
     border-bottom: 1px solid #1b2c13;
@@ -11131,7 +11131,7 @@
 
 @media (max-width: 767px) {
   main {
-    height: 7630px;
+    height: 7830px;
   }
   main .nullbox {
     height: 47px;
@@ -11281,7 +11281,7 @@
   }
   main .sec-1 .intro .reversal {
     overflow-y: hidden;
-    height: 800px;
+    height: 1000px;
     text-align: left;
   }
   main .sec-1 .intro .reversal ul li:nth-child(1) {

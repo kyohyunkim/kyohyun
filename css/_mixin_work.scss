@@ -90,7 +90,7 @@
                 }
                 .reversal{
                     overflow-y: hidden;
-                    height: 1000px;
+                    height: 800px;
                     text-align: center;
                     ul{
                         @include intro_li_1;
@@ -149,7 +149,7 @@
                 }
     
                 .choco{
-                    height: 1000px;
+                    height: 800px;
                     overflow-y: hidden;
                     text-align: center;
                     ul{
@@ -222,7 +222,7 @@
                 }
     
                 .sticker{
-                    height: 1000px;
+                    height: 800px;
                     overflow-y: hidden;
                     text-align: center;
                     border-bottom: 1px solid#1b2c13;
@@ -1782,7 +1782,7 @@
 }
 @mixin mobill_work{
     main{
-        height: 7630px;
+        height: 7830px;
         .nullbox{height:47px; width:100%;}
             
         .sec-1{
@@ -1894,7 +1894,7 @@
                 }
                 .reversal{
                     overflow-y: hidden;
-                    height: 800px;
+                    height: 1000px;
                     text-align: left;
                     ul{
                         @include intro_li_1;

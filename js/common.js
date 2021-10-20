@@ -1,6 +1,4 @@
-
-    //header inc
-    $('header').load('inc.html header > .head', function(){
+$('header').load('inc.html header > .head', function(){
 
 
         const msvgB1 = document.querySelector('.menu ul li:nth-of-type(1)');
